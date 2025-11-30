@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(to right, #6890A0, #4B6A78, #192A32);
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            gap: 20rem;
+            align-items: center;
+            padding-top: 2rem;
+        }
+        
+        .parent1 h2 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .parent2 {
+            display: flex;
+            align-items: center;
+            gap: 1.7rem;
+        }
+        
+        .child2 a {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            padding: 1.5rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .child2 a:hover {
+            color: #FB923C;
+        }
+        
+        .child2 a i {
+            font-size: 0.7rem;
+            position: relative;
+            left: 0.6rem;
+            bottom: 0.2rem;
+        }
+        
+        .child1 i {
+            color: white;
+            position: relative;
+            top: 0.1rem;
+            left: 0.6rem;
+            cursor: pointer;
+        }
+        
+        .child1 i:hover {
+            color: #FB923C;
+        }
+        
+        .child3 {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .child3 i {
+            color: rgb(56, 50, 50);
+            position: relative;
+            left: 0.9rem;
+            top: 0.8rem;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .child3 i:hover {
+            color: #FB923C;
+        }
+        
+        .parent3 .img1 {
+            position: relative;
+            left: 25rem;
+            bottom: 6rem;
+        }
+        
+        .img1 img {
+            width: 52%;
+            animation: updown 2.5s ease-in-out infinite alternate;
+            transform: rotate(-8deg);
+        }
+        
+        @keyframes updown {
+            from {
+                transform: rotate(-21deg) translateY(0px);
+            }
+            to {
+                transform: rotate(-21deg) translateY(-25px);
+            }
+        }
+        
+        .parent3 h1 {
+            color: white;
+            font-size: 3.2rem;
+            position: relative;
+            left: 19rem;
+            top: 10rem;
+            font-weight: 600;
+        }
+        
+        .parent3 #buynow {
+            color: white;
+            position: relative;
+            left: 39rem;
+            top: 10rem;
+            cursor: pointer;
+            z-index: 2;
+        }
+        
+        .parent3 #buynow:hover {
+            color: #F3903E;
+        }
+        
+        .parent3 h3 {
+            color: white;
+            position: relative;
+            left: 12rem;
+            top: 24rem;
+            font-size: 1.7rem;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+        }
+        
+        .parent3 #item {
+            color: white;
+            position: relative;
+            left: 14rem;
+            top: 21.5rem;
+            font-size: 1rem;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            opacity: 1;
+        }
+        
+        #number {
+            color: white;
+            font-weight: 400;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            position: relative;
+            bottom: 20.9rem;
+            left: 85rem;
+            font-size: 1rem;
+        }
+        
+        .parent3 #icon {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            position: relative;
+            left: 84.3rem;
+            bottom: 21rem;
+        }
+        
+        .parent3 #icon i {
+            position: relative;
+            left: 1rem;
+            top: 0.8rem;
+        }
+        
+        .no {
+            position: relative;
+            left: 83.8rem;
+            bottom: 11rem;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .Num {
+            vertical-align: sub;
+            font-size: 0.6em;
+            font-weight: 300;
+        }
+        
+        .link {
+            position: relative;
+            bottom: 12.3rem;
+            left: 11rem;
+            font-size: 1rem;
+            color: #1a2bc5;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="parent1">
+            <h2>Shoes Junction Balaghat</h2>
+        </div>
+        <div class="parent2">
+            <div class="child1"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="child2">
+                <a href="#">Puma<i class="fa-solid fa-caret-down"></i></a>
+                <a href="#">Nike<i class="fa-solid fa-caret-down"></i></a>
+                <a href="#">Jordon<i class="fa-solid fa-caret-down"></i></a>
+            </div>
+            <div class="child3">
+                <i class="fa-solid fa-lock"></i></i>
+            </div>
+    </nav>
+    <div class="parent3">
+        <h1>Shoes Junction</h1>
+        <p id="buynow">BUY NOW</p>
+        <h3>FEATURED</h3>
+        <p id="item">ITEM FOR MEN AND WOMEN</p>
+        <div class="img1"><img src="imgi_1_shoes-removebg-preview.png" alt=""></div>
+        <h2 id="number">6300231330</h2>
+        <div id="icon"><i class="fa-solid fa-phone"></i></div>
+        <p class="no">02/<span class="Num">05</span></p>
+        <a href="https://www.instagram.com/shoes_junction_balaghat/?igsh=NmQ5bTJ6Mm8yZWQz# " target="_blank" class="link">Follw on Instagram</a>
+
+    </div>
+
+</body>
+
+</html>
